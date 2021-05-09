@@ -4,12 +4,10 @@ import Posts from './views/Posts';
 
 const App = () => {
   return (
-    <div className='app'>
-      <BrowserRouter>
-        <Route exact path='/' component={Posts} />
-        <Route path='/users/:id' component={DetailPost} />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Route exact path='/' component={Posts} />
+      <Route path='/users/:id' component={DetailPost} />
+    </BrowserRouter>
   );
 };
 
